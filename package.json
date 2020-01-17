@@ -1,0 +1,23 @@
+{
+	"name": "todo",
+	"version": "1.0.0",
+	"description": "TODO API with JWT authentication",
+	"main": "src/server.js",
+	"scripts": {
+		"dev": "JWT_SECRET=jwtsecret123 nodemon src/server.js",
+		"teste2e": "newman run test/tests.postman_collection.json -e test/dev.postman_environment.json --folder v1 --folder v2"
+	},
+	"author": "Stanislas Duprey",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"express": "^4.17.1",
+		"express-async-errors": "^3.1.1",
+		"express-jwt": "^5.3.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.8.7",
+		"newman": "^4.5.7",
+		"nodemon": "^2.0.2",
+		"rootpath": "^0.1.2"
+	}
+}
